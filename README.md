@@ -26,18 +26,32 @@ it will faster than you expect.
 
 ## Install
 
-Requires [Claude Code](https://claude.com/claude-code) and a vault (a folder of Markdown files;
-Obsidian optional but recommended).
+Requires [Claude Code](https://claude.com/claude-code) and a vault, which is just a folder of
+Markdown files. Obsidian is optional but recommended.
 
-**Into one vault:**
+**Download the repo** (green *Code* button, then *Download ZIP*, or clone it), then from inside
+the downloaded folder point the installer at your vault:
 
-```bash
-git clone <this repo> temp-ingestion
-cp -r temp-ingestion/.claude/agents/* /path/to/your-vault/.claude/agents/
-rm -rf temp-ingestion
+**Windows**
+```powershell
+.\install.ps1 "C:\Users\you\Documents\My Vault"
 ```
 
-**Or for every project on your machine**, copy them into `~/.claude/agents/` instead.
+**macOS / Linux**
+```bash
+./install.sh ~/Documents/My\ Vault
+```
+
+That does three things: copies the six agents into `.claude/agents/`, creates the folders they
+expect if they are missing, and adds a starter `_CLAUDE.md` operating manual if you do not
+already have one. **It never overwrites an existing `_CLAUDE.md` and never touches your notes**,
+so it is safe to run again when the agents are updated.
+
+No vault yet? Make an empty folder and run the installer at it — you will get the structure and
+the manual, ready to start filling.
+
+**Prefer to do it by hand?** Copy `.claude/agents/*.md` into your vault's `.claude/agents/`
+folder, and `_CLAUDE.md` into the vault root. That is all the installer does.
 
 Then open Claude Code in your vault and call one by name, for example:
 
