@@ -40,7 +40,7 @@ the downloaded folder point the installer at your vault:
 ./install.sh ~/Documents/My\ Vault
 ```
 
-That does three things: copies the six agents into `.claude/agents/`, creates the folders they
+That does three things: copies the five agents into `.claude/agents/`, creates the folders they
 expect if they are missing, and adds a starter `_CLAUDE.md` operating manual if you do not
 already have one. **It never overwrites an existing `_CLAUDE.md` and never touches your notes**,
 so it is safe to run again when the agents are updated.
@@ -56,7 +56,7 @@ Then open Claude Code in your vault and call one by name, for example:
 ```
 run the-scribe on this transcript
 run the-librarian on Resources/Books/some-book.pdf
-run the-connector — who have I not spoken to?
+run the-archivist on this contract
 run the-curator
 ```
 
