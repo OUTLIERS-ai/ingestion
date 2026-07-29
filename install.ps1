@@ -2,7 +2,7 @@
 #
 #   .\install.ps1 "C:\Users\you\Documents\My Vault"
 #
-# Copies the six agents into the vault, creates the folders they expect, and drops in a
+# Copies the five agents into the vault, creates the folders they expect, and drops in a
 # starter operating manual if there is not one already. Safe to run twice: it never
 # overwrites an existing _CLAUDE.md and never touches your notes.
 
@@ -19,7 +19,7 @@ $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 $agentDir = Join-Path $VaultPath ".claude\agents"
 New-Item -ItemType Directory -Force -Path $agentDir | Out-Null
 Copy-Item (Join-Path $here ".claude\agents\*.md") $agentDir -Force
-Write-Host "Installed 6 agents to $agentDir" -ForegroundColor Green
+Write-Host "Installed 5 agents to $agentDir" -ForegroundColor Green
 
 # 2. the folders they expect
 foreach ($f in @("Projects", "Areas", "People", "Meetings", "Resources", "Ideas", "Wiki", "Archive", "AI")) {

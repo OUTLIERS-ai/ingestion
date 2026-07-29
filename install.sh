@@ -3,7 +3,7 @@
 #
 #   ./install.sh ~/Documents/My\ Vault
 #
-# Copies the six agents into the vault, creates the folders they expect, and drops in a
+# Copies the five agents into the vault, creates the folders they expect, and drops in a
 # starter operating manual if there is not one already. Safe to run twice: it never
 # overwrites an existing _CLAUDE.md and never touches your notes.
 
@@ -24,7 +24,7 @@ HERE="$(cd "$(dirname "$0")" && pwd)"
 # 1. the agents
 mkdir -p "$VAULT/.claude/agents"
 cp "$HERE"/.claude/agents/*.md "$VAULT/.claude/agents/"
-echo "Installed 6 agents to $VAULT/.claude/agents"
+echo "Installed 5 agents to $VAULT/.claude/agents"
 
 # 2. the folders they expect
 for f in Projects Areas People Meetings Resources Ideas Wiki Archive AI; do

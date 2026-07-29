@@ -1,6 +1,6 @@
 # Outliers Ingestion
 
-Six agents that get information **into** your second brain and keep it usable once it is there.
+Five agents that get information **into** your second brain and keep it usable once it is there.
 
 This is the ingestion layer and nothing else. There is no content writing in here, no sales, no
 planning. Those are separate concerns and mixing them is how these systems get abandoned. Every
@@ -17,12 +17,10 @@ business can use.
 | **the-librarian** | Books and courses | The frameworks and models, captured on the author's terms first, then translated into how they apply to your business |
 | **the-scribe** | A call recording, transcript or rough notes | A clean record: summary, decisions, and action items with owners and dates |
 | **the-researcher** | A question | A structured, cited dossier saved back into the vault, not a chat answer you lose |
-| **the-connector** | Who you spoke to | People notes kept current, last contact tracked, and who is overdue a conversation |
 | **the-curator** | Nothing, run it weekly | Contradictions reconciled, duplicates pruned, broken links fixed, memory kept lean |
 
-**The first four are the four channels material arrives through.** The fifth turns conversations
-into a relationship record. The sixth stops the whole thing rotting once volume goes up, which
-it will faster than you expect.
+**The first four are the four channels material arrives through.** The fifth stops the whole
+thing rotting once volume goes up, which it will faster than you expect.
 
 ## Install
 
@@ -68,10 +66,8 @@ run the-curator
    feels sensible and tidy none of it.
 2. **the-scribe on every call from now on.** The highest-value material in most businesses is
    spoken and never written down. It is gone in a fortnight.
-3. **the-connector as you go.** One note per person, updated the same day. A relationship record
-   that is not current is not a record.
-4. **the-researcher when you have a real question**, not to browse.
-5. **the-curator every Friday.** Ten minutes. It is what stops a growing vault turning into a
+3. **the-researcher when you have a real question**, not to browse.
+4. **the-curator every Friday.** Ten minutes. It is what stops a growing vault turning into a
    pile.
 
 ## What is deliberately not in here
